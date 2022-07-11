@@ -1,0 +1,538 @@
+config:
+    allow_repeat: false
+    generate_n: 20
+    output_dir: 'data/out/plates/'
+plates:
+    random.linear:
+        params:
+            - 0
+            - 100
+        brazil_old:
+            random.params: 40
+            vars:
+                - licence_number: 'reg:[A-Z]{3}·[0-9]{4}'
+                - random.linear:
+                    params:
+                        - 0
+                        - 100
+                    standard:
+                        random.params: 80
+                        back_colour: '#D0D0D0'
+                        back_colour2: '#A0A0A0'
+                        text_colour: '#050505'
+                    public_transport:
+                        random.params: 99
+                        back_colour: '#D00000'
+                        back_colour2: '#A00000'
+                        text_colour: '#F5F5F5'
+                    test:
+                        random.params: 100
+                        back_colour: '#3060A0'
+                        back_colour2: '#003080'
+                        text_colour: '#F5F5F5'
+                - random.linear:
+                    params:
+                        - 0
+                        - 1000
+                    city_01:
+                        random.params: 183
+                        city_name: 'SP · SÃO PAULO'
+                    city_02:
+                        random.params: 282
+                        city_name: 'RJ · RIO DE JANEIRO'
+                    city_03:
+                        random.params: 328
+                        city_name: 'DF · BRASÍLIA'
+                    city_04:
+                        random.params: 370
+                        city_name: 'BA · SALVADOR'
+                    city_05:
+                        random.params: 410
+                        city_name: 'CE · FORTALEZA'
+                    city_06:
+                        random.params: 448
+                        city_name: 'MG · BELO HORIZONTE'
+                    city_07:
+                        random.params: 480
+                        city_name: 'AM · MANAUS'
+                    city_08:
+                        random.params: 509
+                        city_name: 'PR · CURITIBA'
+                    city_09:
+                        random.params: 534
+                        city_name: 'PE · RECIFE'
+                    city_10:
+                        random.params: 557
+                        city_name: 'GO · GOIÂNIA'
+                    city_11:
+                        random.params: 579
+                        city_name: 'PA · BELÉM'
+                    city_12:
+                        random.params: 601
+                        city_name: 'RS · PORTO ALEGRE'
+                    city_13:
+                        random.params: 621
+                        city_name: 'SP · GUARULHOS'
+                    city_14:
+                        random.params: 639
+                        city_name: 'SP · CAMPINAS'
+                    city_15:
+                        random.params: 656
+                        city_name: 'MA · SÃO LUÍS'
+                    city_16:
+                        random.params: 672
+                        city_name: 'RJ · SÃO GONÇALO'
+                    city_17:
+                        random.params: 687
+                        city_name: 'AL · MACEIÓ'
+                    city_18:
+                        random.params: 701
+                        city_name: 'RJ · DUQUE DE CAXIAS'
+                    city_19:
+                        random.params: 714
+                        city_name: 'MS · CAMPO GRANDE'
+                    city_20:
+                        random.params: 727
+                        city_name: 'RN · NATAL'
+                    city_21:
+                        random.params: 740
+                        city_name: 'PI · TERESINA'
+                    city_22:
+                        random.params: 753
+                        city_name: 'SP · SÃO BERNARDO DO CAMPO'
+                    city_23:
+                        random.params: 765
+                        city_name: 'RJ · NOVA IGUAÇU'
+                    city_24:
+                        random.params: 777
+                        city_name: 'PB · JOÃO PESSOA'
+                    city_25:
+                        random.params: 788
+                        city_name: 'SP · SÃO JOSÉ DOS CAMPOS'
+                    city_26:
+                        random.params: 799
+                        city_name: 'SP · SANTO ANDRÉ'
+                    city_27:
+                        random.params: 809
+                        city_name: 'SP · RIBEIRÃO PRETO'
+                    city_28:
+                        random.params: 820
+                        city_name: 'PE · JABOATÃO DOS GUARARAPES'
+                    city_29:
+                        random.params: 830
+                        city_name: 'SP · OSASCO'
+                    city_30:
+                        random.params: 840
+                        city_name: 'MG · UBERLÂNDIA'
+                    city_31:
+                        random.params: 851
+                        city_name: 'SP · SOROCABA'
+                    city_32:
+                        random.params: 860
+                        city_name: 'MG · CONTAGEM'
+                    city_33:
+                        random.params: 870
+                        city_name: 'SE · ARACAJU'
+                    city_34:
+                        random.params: 879
+                        city_name: 'BA · FEIRA DE SANTANA'
+                    city_35:
+                        random.params: 889
+                        city_name: 'MT · CUIABÁ'
+                    city_36:
+                        random.params: 897
+                        city_name: 'SC · JOINVILLE'
+                    city_37:
+                        random.params: 906
+                        city_name: 'GO · APARECIDA DE GOIÂNIA'
+                    city_38:
+                        random.params: 915
+                        city_name: 'PR · LONDRINA'
+                    city_39:
+                        random.params: 923
+                        city_name: 'MG · JUIZ DE FORA'
+                    city_40:
+                        random.params: 931
+                        city_name: 'RO · PORTO VELHO'
+                    city_41:
+                        random.params: 939
+                        city_name: 'PA · ANANINDEUA'
+                    city_42:
+                        random.params: 947
+                        city_name: 'ES · SERRA'
+                    city_43:
+                        random.params: 955
+                        city_name: 'RS · CAXIAS DO SUL'
+                    city_44:
+                        random.params: 962
+                        city_name: 'RJ · NITERÓI'
+                    city_45:
+                        random.params: 970
+                        city_name: 'RJ · BELFORD ROXO'
+                    city_46:
+                        random.params: 977
+                        city_name: 'AP · MACAPÁ'
+                    city_47:
+                        random.params: 985
+                        city_name: 'RJ · CAMPOS DOS GOYTACAZES'
+                    city_48:
+                        random.params: 993
+                        city_name: 'SC · FLORIANÓPOLIS'
+                    city_49:
+                        random.params: 1000
+                        city_name: 'ES · VILA VELHA'
+            size:
+                - 800
+                - 250
+            components:
+                - concenctric_rectangles:
+                    center:
+                        - 0.5
+                        - 0.5
+                    size:
+                        - 1
+                        - 1
+                    roundness: 5
+                    components:
+                        - 1:     '#202020'
+                        - 0.995: '$back_colour2'
+                        - 0.96:  '#202020'
+                        - 0.955: '$back_colour'
+                - text:
+                    content: '$licence_number'
+                    center:
+                        - 0.5
+                        - 0.5
+                    size: 0.6
+                    font: 'data/raw/fonts/mandatory.ttf'
+                    color: '$text_colour'
+                - concenctric_rectangles:
+                    center:
+                        - 0.5
+                        - 0.2
+                    size:
+                        - 0.8
+                        - 0.15
+                    roundness: 1
+                    components:
+                        - 1:     '#202020'
+                        - 0.995: '$back_colour2'
+                - text:
+                    content: $city_name
+                    center:
+                        - 0.5
+                        - 0.19
+                    size: 0.1
+                    font: 'data/raw/fonts/mandatory.ttf'
+                    color: '$text_colour'
+                - concenctric_rectangles:
+                    center:
+                        - 0.15
+                        - 0.19
+                    size:
+                        - 0.0166
+                        - 0.05
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.8: '#A0A0A0'
+                        - 0.2: '#808080'
+                - concenctric_rectangles:
+                    center:
+                        - 0.85
+                        - 0.19
+                    size:
+                        - 0.0166
+                        - 0.05
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.8: '#A0A0A0'
+                        - 0.2: '#808080'
+                - rectangle:
+                    center:
+                        - 0.1
+                        - 0.15
+                    size:
+                        - 0.1
+                        - 0.02
+                    roundness: 5
+                    color: '#909090'
+                - rectangle:
+                    center:
+                        - 0.095
+                        - 0.15
+                    size:
+                        - 0.045
+                        - 0.09
+                    roundness: 50
+                    color: '#20D010'
+                - rectangle:
+                    center:
+                        - 0.27
+                        - 0.095
+                    size:
+                        - 0.045
+                        - 0.045
+                    roundness: 20
+                    color: '#F5F5F5'
+                - rectangle:
+                    center:
+                        - 0.73
+                        - 0.095
+                    size:
+                        - 0.045
+                        - 0.045
+                    roundness: 20
+                    color: '#F5F5F5'
+                - rectangle:
+                    center:
+                        - 0.73
+                        - 0.905
+                    size:
+                        - 0.045
+                        - 0.045
+                    roundness: 20
+                    color: '#F5F5F5'
+                - rectangle:
+                    center:
+                        - 0.27
+                        - 0.905
+                    size:
+                        - 0.045
+                        - 0.045
+                    roundness: 20
+                    color: '#F5F5F5'
+                - concenctric_rectangles:
+                    center:
+                        - 0.27
+                        - 0.095
+                    size:
+                        - 0.0266
+                        - 0.08
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.9: '#A0A0A0'
+                        - 0.8: '#505050'
+                        - 0.4: '#202020'
+                - concenctric_rectangles:
+                    center:
+                        - 0.73
+                        - 0.095
+                    size:
+                        - 0.0266
+                        - 0.08
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.9: '#A0A0A0'
+                        - 0.8: '#505050'
+                        - 0.4: '#202020'
+                - concenctric_rectangles:
+                    center:
+                        - 0.73
+                        - 0.905
+                    size:
+                        - 0.0266
+                        - 0.08
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.9: '#A0A0A0'
+                        - 0.8: '#505050'
+                        - 0.4: '#202020'
+                - concenctric_rectangles:
+                    center:
+                        - 0.27
+                        - 0.905
+                    size:
+                        - 0.0266
+                        - 0.08
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.9: '#A0A0A0'
+                        - 0.8: '#505050'
+                        - 0.4: '#202020'
+        
+        mercosur:
+            random.params: 100
+            vars:
+                - back_colour: '#E0E0E0'
+                - top_colour: '#0030B0'
+                - secondary_font: 'data/raw/fonts/country_name2.otf'
+                - random.linear:
+                    params:
+                        - 0
+                        - 100
+                    standard:
+                        random.params: 80
+                        text_colour: '#202020'
+                    public_transport:
+                        random.params: 99
+                        text_colour: '#D02020'
+                    diplomat:
+                        random.params: 100
+                        text_colour: '#0030B0'
+                - random.linear:
+                    params:
+                        - 0
+                        - 1000
+                    brazil:
+                        random.params: 760
+                        symbol_text: 'BR'
+                        flag: 'data/raw/flags/Flag_of_Brazil.png'
+                        country_name: 'BRASIL'
+                        licence_number: 'reg:[A-Z]{3}[0-9][A-Z][0-9]{2}'
+                    argentina:
+                        random.params: 921
+                        symbol_text: ''
+                        country_name: 'REPUBLICA ARGENTINA'
+                        flag: 'data/raw/flags/Flag_of_Argentina.png'                        
+                        licence_number: 'reg:[A-Z]{2} [0-9]{3} [A-Z]{2}'
+                    bolivia:
+                        random.params: 962
+                        symbol_text: ''
+                        country_name: 'BOLIVIA'
+                        flag: 'data/raw/flags/Flag_of_Bolivia.png'
+                        licence_number: 'reg:[A-Z]{2} [0-9]{5}'
+                    paraguay:
+                        random.params: 987
+                        symbol_text: ''
+                        country_name: 'PARAGUAY'
+                        flag: 'data/raw/flags/Flag_of_Paraguay.png'
+                        licence_number: 'reg:[A-Z]{4} [0-9]{3}'
+                    uruguay:
+                        random.params: 1000
+                        symbol_text: ''
+                        country_name: 'URUGUAY'
+                        flag: 'data/raw/flags/Flag_of_Uruguay.png'
+                        licence_number: 'reg:[A-Z]{3} [0-9]{4}'
+            size:
+                - 800
+                - 240
+            components:
+                - concenctric_rectangles:
+                    center:
+                        - 0.5
+                        - 0.5
+                    size:
+                        - 1
+                        - 1
+                    roundness: 2
+                    components:
+                        - 1:     '#F0F0F0'
+                        - 0.995: '$text_colour'
+                        - 0.98:  '$back_colour'
+                - text:
+                    content: '$licence_number'
+                    center:
+                        - 0.5
+                        - 0.6
+                    size: 0.55
+                    font: 'data/raw/fonts/fe-schrift.ttf'
+                    color: '$text_colour'
+                - rectangle:
+                    center:
+                        - 0.5
+                        - 0.1
+                    size:
+                        - 0.98
+                        - 0.13
+                    roundness: 2
+                    color: '$top_colour'
+                - rectangle:
+                    center:
+                        - 0.5
+                        - 0.19
+                    size:
+                        - 0.98
+                        - 0.16
+                    roundness: 0
+                    color: '$top_colour'
+                - text:
+                    content: '$country_name'
+                    center:
+                        - 0.5
+                        - 0.15
+                    size: 0.12
+                    font: '$secondary_font'
+                    color: '$back_colour'
+                - text:
+                    content: '$symbol_text'
+                    center:
+                        - 0.04
+                        - 0.9
+                    size: 0.12
+                    font: '$secondary_font'
+                    color: '#202020'
+                - rectangle:
+                    center:
+                        - 0.27
+                        - 0.095
+                    size:
+                        - 0.045
+                        - 0.045
+                    roundness: 20
+                    color: '#F5F5F5'
+                - rectangle:
+                    center:
+                        - 0.73
+                        - 0.095
+                    size:
+                        - 0.045
+                        - 0.045
+                    roundness: 20
+                    color: '#F5F5F5'
+                - concenctric_rectangles:
+                    center:
+                        - 0.27
+                        - 0.095
+                    size:
+                        - 0.0266
+                        - 0.08
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.9: '#A0A0A0'
+                        - 0.8: '#505050'
+                        - 0.4: '#202020'
+                - concenctric_rectangles:
+                    center:
+                        - 0.73
+                        - 0.095
+                    size:
+                        - 0.0266
+                        - 0.08
+                    roundness: 200
+                    components:
+                        - 1:   '#202020'
+                        - 0.9: '#A0A0A0'
+                        - 0.8: '#505050'
+                        - 0.4: '#202020'
+                - image:
+                    center:
+                        - 0.08
+                        - 0.15
+                    size:
+                        - 0.075
+                        - 0.18
+                    path: 'data/raw/images/Flag_of_Mercosul.png'
+                - rectangle:
+                    center:
+                        - 0.92
+                        - 0.15
+                    size:
+                        - 0.079
+                        - 0.19
+                    roundness: 0
+                    color: '#F0F0F0'
+                - image:
+                    center:
+                        - 0.92
+                        - 0.15
+                    size:
+                        - 0.075
+                        - 0.18
+                    path: '$flag'
