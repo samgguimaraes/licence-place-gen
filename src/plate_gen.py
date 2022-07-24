@@ -8,7 +8,7 @@ import image_creator
 import descriptor_parser
 
 
-def build_from_descriptor(description: list):
+def build_from_descriptor(description: list, paste_image: Image = None) -> Image:
     '''Generate an image from the description
     '''
     img = Image.new('RGBA', description['size'], color='#FFFFFF00')
@@ -40,7 +40,13 @@ def build_from_descriptor(description: list):
             image_creator.stamp_image(img,
                         content['center'],
                         content['size'],
-                        content['path'])
+                        image_path = content['path'])
+        elif comp_name == 'paste_image' and paste_image is not None:
+            image_creator.stamp_image(img,
+                        content['center'],
+                        content['size'],
+                        im = paste_image)
+
 
     return img
 
@@ -62,6 +68,9 @@ def gen_plates(descriptor_path: str):
             plate_desc, keys = descriptor_parser.get_values(desc['plates'])
             licence = keys['licence_number']
         img = build_from_descriptor(plate_desc)
+        if 'context' in desc:
+            contect_desc, keys = descriptor_parser.get_values(desc['context'])
+            img = build_from_descriptor(contect_desc, paste_image=img)
         img.save(os.path.join(output_dir, f'{int(time.time())}_{licence}.png'))
 
 if __name__ == '__main__':
