@@ -537,6 +537,56 @@ plates:
                         - 0.18
                     path: '$flag'
 context:
+    vars:
+        - back_colour: '#E0E0E0'
+        - top_colour: '#0030B0'
+        - secondary_font: 'data/raw/fonts/country_name2.otf'
+        - random.linear:
+            params:
+                - 0
+                - 1000
+            white:
+                random.params: 208
+                car_colour: '#F0F0F0'
+            black:
+                random.params: 399
+                car_colour: '#101010'
+            silver:
+                random.params: 569
+                car_colour: '#707070'
+            red:
+                random.params: 726
+                car_colour: '#D02020'
+            grey:
+                random.params: 827
+                car_colour: '#B0B0B0'
+            blue:
+                random.params: 905
+                car_colour: '#2020D0'
+            green:
+                random.params: 944
+                car_colour: '#20D020'
+            beige:
+                random.params: 965
+                car_colour: '#E0E0D0'
+            yellow:
+                random.params: 979
+                car_colour: '#E0E020'
+            brown:
+                random.params: 986
+                car_colour: '#A02020'
+            orange:
+                random.params: 991
+                car_colour: '#E0A020'
+            purple:
+                random.params: 994
+                car_colour: '#7020A0'
+            golden:
+                random.params: 997
+                car_colour: '#F0D020'
+            pink:
+                random.params: 1000
+                car_colour: '#F0C0C0'
     size:
         - 800
         - 600
@@ -567,7 +617,7 @@ context:
                 - 1
                 - 0.5
             roundness: 2
-            color: '#4090F0'
+            color: '$car_colour'
         - rectangle:
             center:
                 - 0.5
